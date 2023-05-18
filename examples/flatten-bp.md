@@ -10,7 +10,7 @@
 		"expr": "component.where(code.coding.exists(system='http://loinc.org' and code='8480-6')).first()"
 	},{
 		"name": "dbp_component",
-        "expr": "component.where(code.coding.exists(system='http://loinc.org' and code='8462-4')).first()"
+		"expr": "component.where(code.coding.exists(system='http://loinc.org' and code='8462-4')).first()"
 	}],
 	"filters": [{
 		"expr": "code.coding.exists(system='http://loinc.org' and code='85354-9')"
@@ -19,7 +19,7 @@
 	},{
 		"expr": "%dbp_component.dataAbsentReason.empty()"
 	}],
-    "columns": [{
+	"columns": [{
 		"name": "id", "expr": "id"
 	},{
 		"name": "patient_id", "expr": "subject.getId()"
